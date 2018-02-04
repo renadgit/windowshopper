@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		95124F7D2026DD54004B8F69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95124F7C2026DD54004B8F69 /* AppDelegate.swift */; };
-		95124F7F2026DD54004B8F69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95124F7E2026DD54004B8F69 /* ViewController.swift */; };
+		95124F7F2026DD54004B8F69 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95124F7E2026DD54004B8F69 /* MainVC.swift */; };
 		95124F822026DD54004B8F69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95124F802026DD54004B8F69 /* Main.storyboard */; };
 		95124F842026DD54004B8F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95124F832026DD54004B8F69 /* Assets.xcassets */; };
 		95124F872026DD54004B8F69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95124F852026DD54004B8F69 /* LaunchScreen.storyboard */; };
+		95124F912026E62E004B8F69 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95124F902026E62E004B8F69 /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		95124F792026DD54004B8F69 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95124F7C2026DD54004B8F69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		95124F7E2026DD54004B8F69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95124F7E2026DD54004B8F69 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		95124F812026DD54004B8F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95124F832026DD54004B8F69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95124F862026DD54004B8F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95124F882026DD54004B8F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95124F902026E62E004B8F69 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		95124F7B2026DD54004B8F69 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				95124F8F2026E5FD004B8F69 /* Views */,
+				95124F8E2026E3AD004B8F69 /* Controller */,
 				95124F7C2026DD54004B8F69 /* AppDelegate.swift */,
-				95124F7E2026DD54004B8F69 /* ViewController.swift */,
 				95124F802026DD54004B8F69 /* Main.storyboard */,
 				95124F832026DD54004B8F69 /* Assets.xcassets */,
 				95124F852026DD54004B8F69 /* LaunchScreen.storyboard */,
 				95124F882026DD54004B8F69 /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		95124F8E2026E3AD004B8F69 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95124F7E2026DD54004B8F69 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		95124F8F2026E5FD004B8F69 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95124F902026E62E004B8F69 /* CurrencyTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95124F7F2026DD54004B8F69 /* ViewController.swift in Sources */,
+				95124F912026E62E004B8F69 /* CurrencyTextField.swift in Sources */,
+				95124F7F2026DD54004B8F69 /* MainVC.swift in Sources */,
 				95124F7D2026DD54004B8F69 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +298,7 @@
 				DEVELOPMENT_TEAM = C4C7LRB264;
 				INFOPLIST_FILE = "window-shopper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.devslopes.window-shopper";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devslopes.window-shopper1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,7 +313,7 @@
 				DEVELOPMENT_TEAM = C4C7LRB264;
 				INFOPLIST_FILE = "window-shopper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.devslopes.window-shopper";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devslopes.window-shopper1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
